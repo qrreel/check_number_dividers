@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 400px;
+    padding: 50px;
+    background-color: antiquewhite;
+}
+
+p {
+    text-align: center;
+    height: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.check-num, .check-num-btn {
+    font-size: 16px;
+    margin: 20px;
+}
+
+.check-num {
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 3px;
+    padding: 0 0 0 20px;
+    text-align: end;
+    background-color: transparent;
+}
+
+.check-num:focus {
+    outline: none;    
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 3px;
+}
+
+.check-num:focus::placeholder {
+    color: transparent;
+}
+
+.check-num::-webkit-outer-spin-button,
+.check-num::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 10px;
+}
+
+.check-num-btn {
+    height: 36px;
+    width: 100px;
+    background-color: bisque;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+.check-num-btn:hover {
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, 0.7);
+}
+
+.result {
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    margin: 30px;
+    line-height: 30px;
+}
